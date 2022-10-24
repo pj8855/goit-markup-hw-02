@@ -8,8 +8,14 @@ header {
 }
 
 /* -- Логотип Студії -- */
+:root {
+  --brand-color: #2196F3;
+  --header-color: #000000;
+  --footer-color: #FFFFFF;
+}
+
 .logo {
-  color: #2196F3;
+  color: var(--brand-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -20,7 +26,7 @@ header {
 
 /* -- Заміна кольору для лого у хеддері -- */
 #studio-logo {
-  color: #000000;
+  color: var(--header-color)
 }
 
 /* -- Загальні доп. класи для списків та посилань -- */
@@ -69,14 +75,17 @@ header {
 
 /* -- Секція heros -- */
 .heros {
+  background-color: #2F303A;
+  text-align: center;
+}
+
+.heros-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
-  text-align: center;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
-  background-color: #2F303A;
 }
 
 /* -- Кнопка замовлення у сек. heros -- */
@@ -95,7 +104,6 @@ header {
 
 /* -- Секція Особливості -- */
 .features-title {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -104,7 +112,6 @@ header {
 }
 
 .features-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -113,7 +120,6 @@ header {
 
 /* -- Секція about -- */
 .about-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -127,7 +133,6 @@ header {
 }
 
 .team-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -146,7 +151,6 @@ header {
 
 /* -- посада учасника команди -- */
 .position {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -177,7 +181,6 @@ header {
 
 /* -- Зразки проектів на ст. портфоліо -- */
 .project-list-item>h3 {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -185,7 +188,6 @@ header {
 }
 
 .project-list-item>p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -198,8 +200,8 @@ footer {
 }
 
 address {
-  font-weight: 400;
   font-size: 14px;
+  font-style: normal;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: #FFFFFF;
@@ -207,13 +209,12 @@ address {
 
 /* -- Заміна кольору для лого у "підвалі" -- */
 #studio-footer {
-  color: #FFFFFF;
+  color: var(--footer-color)
 }
 
 /* -- телефон та мейл у "підвалі" */
 .footer-mail,
 .footer-tel {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
